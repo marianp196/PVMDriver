@@ -18,8 +18,9 @@ import driver.IPVMBoardDriver;
  */
 public class PCA9685 implements IPVMBoardDriver{
 
-    public PCA9685(IBusI2C i2c) {
+    public PCA9685(IBusI2C i2c, int adress) {
         _i2c = i2c;
+        _i2cAdress = adress;
     }
 
         
